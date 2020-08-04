@@ -1,0 +1,6 @@
+@import url('normalize.css');
+@import url('main.css');
+
+html {
+	color: green;
+}
