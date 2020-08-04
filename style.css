@@ -1,15 +1,89 @@
 @import url('normalize.css');
 @import url('main.css');
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&family=Raleway:wght@600&display=swap');
+@import url('menu.css');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&family=Raleway:wght@700&display=swap');
+
+:root {
+  --color-primary: #114E82;
+  --color-secondary: #fffdff;
+  --color-black: #3a3a3a;
+  --duration: 1s;
+  --nav-duration: calc(var(--duration) / 4);
+  --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --space: 1rem;
+  --font-primary: 'Mulish', sans-serif;
+  --font-heading: 'Raleway', sans-serif;
+  --font-size: 1.125rem;
+  --line-height: 1.5;
+}
 
 html {
-	font-family: 'Mulish', sans-serif;
-	background: #fffdff;
-	color: #3a3a3a;
+	font-family: var(--font-primary);
+	background: var(--color-secondary);
+	color: var(--color-black);
 }
 
 @media screen and (min-width:320px) {
+	
 
+	header {
+		padding: 30px;
+	}
+
+	#logo-img {
+		background: url('scai_logo_t.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 35px;
+		width: 35px;
+	}
+
+	#logo {
+		display: flex;
+		margin-top: -7px;
+		/*justify-content: space-between;*/
+	}
+
+	#logo h1 {
+		margin: 0;
+		margin-left: 10px;
+		color: #114e82;
+		font-size: 12px;
+	}
+
+	.center-image {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: white;
+		width: 75%;
+	}
+
+	#header-image {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: -10px;
+		background: url('scai-header.jpg');
+		background-size: cover;
+		width: 100%;
+		height: 250px;
+		-webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(5%);
+         -o-filter: grayscale(5%);
+        -ms-filter: grayscale(5%);
+            filter: grayscale(5%);
+	}
+
+	#content {
+		margin: 35px;
+	}
+
+	footer {
+		padding: 35px;
+		background: var(--color-primary);
+		color: var(--color-secondary);
+	}
 }
 
 @media screen and (min-width:720px) {
