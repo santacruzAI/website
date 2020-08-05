@@ -37,6 +37,14 @@ html {
 	font-weight: bold;
 }
 
+.scai {
+	background: url('scai_logo_t_white.png');
+}
+
+.baskin {
+	background: url('baskin.png');
+}
+
 @media screen and (min-width:320px) {
 	ul {
 		list-style-type: none;
@@ -105,6 +113,20 @@ html {
 		align-items: center;
 		color: white;
 		width: 75%;
+	}
+
+	.image-content {
+		height: 50px;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.baskin {
+		width: 130px;
+	}
+
+	.scai {
+		width: 50px;
 	}
 
 	#content #apply {
@@ -224,12 +246,25 @@ html {
 		width: 50%;
 	}
 
+	.image-content {
+		height: 75px;
+	}
+
+	.baskin {
+		width: 195px;
+	}
+
+	.scai {
+		width: 75px;
+	}
+
 	#content {
 		margin: 50px 200px 25px 200px;
 	}
 
 	#beginner, #advanced {
 		padding: 20px 200px 25px 200px;
+		text-align: right;
 	}
 
 	#beginner-explained, #advanced-explained {
@@ -241,6 +276,69 @@ html {
 	}
 }
 
-@media screen and (min-width:1500px) {
+@media screen and (min-width:1400px) {
+	.big {
+		font-size: 36px;
+	}
 
+	header {
+		padding: 10px 300px 10px 300px;
+	}
+
+	.main-navigation-toggle + label {
+		top: 2px;
+		right: 300px;
+	}
+
+	#header-image {
+		height: 700px;
+		background-position: 50% 35%;
+	}
+
+	.center-image {
+		width: 40%;
+	}
+
+	#content {
+		margin: 50px 300px 25px 300px;
+	}
+
+	#beginner, #advanced {
+		padding: 20px 300px 25px 300px;
+	}
+
+	#beginner-explained, #advanced-explained {
+		margin: 50px 300px 50px 300px;
+	}
+
+	footer {
+		padding:  50px 300px 50px 300px;
+	}
+}
+
+@media screen and (min-width:1800px) {
+	header {
+		padding: 15px 500px 15px 500px;
+	}
+
+	.main-navigation-toggle + label {
+		top: 3px;
+		right: 500px;
+	}
+
+	#content {
+		margin: 50px 500px 25px 500px;
+	}
+
+	#beginner, #advanced {
+		padding: 20px 500px 25px 500px;
+	}
+
+	#beginner-explained, #advanced-explained {
+		margin: 50px 500px 50px 500px;
+	}
+
+	footer {
+		padding:  50px 500px 50px 500px;
+	}
 }
