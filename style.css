@@ -1,7 +1,8 @@
 @import url('normalize.css');
 @import url('main.css');
 @import url('menu.css');
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;800&family=Raleway:wght@700&display=swap');
+
 
 :root {
   --color-primary: #114E82;
@@ -21,13 +22,44 @@ html {
 	font-family: var(--font-primary);
 	background: var(--color-secondary);
 	color: var(--color-black);
+	font-weight: 500;
+}
+
+.big {
+	font-size: 24px;
+}
+
+.medium {
+	font-size: 20px;
+}
+
+.bold {
+	font-weight: bold;
 }
 
 @media screen and (min-width:320px) {
-	
+	ul {
+		list-style-type: none;
+		line-height: 1.25;
+		margin-left: -40px;
+	}
+
+	ul li {
+		margin-top: 15px;
+	}
 
 	header {
-		padding: 30px;
+		width: 100%;
+		z-index: 2;
+		background: var(--color-secondary);
+		position: fixed;
+		padding: 10px;
+		padding-bottom: 7px;
+	}
+
+	.main-navigation-toggle + label {
+		top: 12px;
+		right: 10px;
 	}
 
 	#logo-img {
@@ -40,7 +72,6 @@ html {
 
 	#logo {
 		display: flex;
-		margin-top: -7px;
 		/*justify-content: space-between;*/
 	}
 
@@ -51,6 +82,23 @@ html {
 		font-size: 12px;
 	}
 
+	#header-image {
+		padding-top: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: url('scai-header.jpg');
+		background-size: cover;
+		width: 100%;
+		height: 250px;
+		-webkit-filter: grayscale(5%);
+        -moz-filter: grayscale(5%);
+        -ms-filter: grayscale(5%);
+        -o-filter: grayscale(5%);
+        filter: grayscale(5%);
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+	}
+
 	.center-image {
 		display: flex;
 		justify-content: space-between;
@@ -59,39 +107,138 @@ html {
 		width: 75%;
 	}
 
-	#header-image {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-top: -10px;
-		background: url('scai-header.jpg');
-		background-size: cover;
-		width: 100%;
-		height: 250px;
-		-webkit-filter: grayscale(100%);
-       -moz-filter: grayscale(5%);
-         -o-filter: grayscale(5%);
-        -ms-filter: grayscale(5%);
-            filter: grayscale(5%);
+	#content #apply {
+		background: clear;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-family: var(--font-heading);
+		font-weight: 700;
+		padding: 12px;
+		text-decoration: none;
+		border: 1px solid var(--color-primary);
+		color: var(--color-primary);
+		margin-bottom: 500px;
+		cursor: pointer;
 	}
 
 	#content {
-		margin: 35px;
+		margin: 25px;
+		margin-bottom: 0px;
+		clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+	}
+
+	#content h1, #beginner-explained h1, #advanced-explained h1 {
+		margin: 10px 0px 30px 0px;
+		font-family: var(--font-heading);
+		font-size: 24px;
+	}
+
+	#content p, #beginner-explained p, #advanced-explained p {
+		margin: 10px 0px 30px 0px;
+		line-height: 1.75;
+	}
+
+	#content p a, #beginner-explained p a, #advanced-explained p a {
+		color: var(--color-primary);
+		font-weight: 800;
+		text-decoration: none;
+	}
+
+	#beginner {
+		background: var(--color-primary);
+		color: var(--color-secondary);
+		padding: 25px;
+		clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+	}
+
+	#beginner-explained, #advanced-explained {
+		margin: 25px;
+	}
+
+	#advanced {
+		clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+		background: #FDC80B;
+		color: var(--color-black);
+		padding: 25px;
 	}
 
 	footer {
 		padding: 35px;
-		background: var(--color-primary);
+		background: var(--color-black);
 		color: var(--color-secondary);
 	}
 }
 
 @media screen and (min-width:720px) {
+	header {
+		padding: 18px;
+	}
 
+	.main-navigation li {
+		font-size: 48px;
+		padding-left: 20px;
+	}
+
+	#header-image {
+		height: 400px;
+	}
+
+	.center-image {
+		width: 60%;
+	}
+
+	#content {
+		margin: 75px;
+		margin-bottom: 25px;
+	}
+
+	#beginner, #advanced {
+		padding-left: 75px;
+		padding-right: 75px;
+	}
+
+	#beginner-explained, #advanced-explained {
+		margin: 50px 75px 50px 75px;
+	}
 }
 
 @media screen and (min-width:1080px) {
+	header {
+		padding: 10px 200px 10px 200px;
+	}
 
+	.main-navigation-toggle + label {
+		top: 4px;
+		right: 200px;
+	}
+
+	.main-navigation li {
+		font-size: 64px;
+	}
+
+	#header-image {
+		height: 550px;
+	}
+
+	.center-image {
+		width: 50%;
+	}
+
+	#content {
+		margin: 50px 200px 25px 200px;
+	}
+
+	#beginner, #advanced {
+		padding: 20px 200px 25px 200px;
+	}
+
+	#beginner-explained, #advanced-explained {
+		margin: 50px 200px 50px 200px;
+	}
+
+	footer {
+		padding:  50px 200px 50px 200px;
+	}
 }
 
 @media screen and (min-width:1500px) {
