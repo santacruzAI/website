@@ -129,6 +129,20 @@ html {
 		width: 50px;
 	}
 
+	#announcements {
+		margin: 25px;
+		margin-bottom: 0px;
+		clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+	}
+
+	#join {
+		width: auto;
+		height: 50px;
+		background: url('discord.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
 	#content #apply {
 		background: clear;
 		text-transform: uppercase;
@@ -146,21 +160,20 @@ html {
 	#content {
 		margin: 25px;
 		margin-bottom: 0px;
-		clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 	}
 
-	#content h1, #beginner-explained h1, #advanced-explained h1 {
+	#content h1, #beginner-explained h1, #advanced-explained h1, #announcements h1 {
 		margin: 10px 0px 30px 0px;
 		font-family: var(--font-heading);
 		font-size: 24px;
 	}
 
-	#content p, #beginner-explained p, #advanced-explained p {
+	#content p, #beginner-explained p, #advanced-explained p,, #announcements p {
 		margin: 10px 0px 30px 0px;
 		line-height: 1.75;
 	}
 
-	#content p a, #beginner-explained p a, #advanced-explained p a {
+	#content p a, #beginner-explained p a, #advanced-explained p a, #announcements p a {
 		color: var(--color-primary);
 		font-weight: 800;
 		text-decoration: none;
@@ -209,7 +222,7 @@ html {
 		width: 60%;
 	}
 
-	#content {
+	#content, #announcements {
 		margin: 75px;
 		margin-bottom: 25px;
 	}
@@ -258,7 +271,7 @@ html {
 		width: 75px;
 	}
 
-	#content {
+	#content, #announcements {
 		margin: 50px 200px 25px 200px;
 	}
 
@@ -299,7 +312,7 @@ html {
 		width: 40%;
 	}
 
-	#content {
+	#content, #announcements {
 		margin: 50px 300px 25px 300px;
 	}
 
@@ -326,7 +339,7 @@ html {
 		right: 500px;
 	}
 
-	#content {
+	#content, #announcements {
 		margin: 50px 500px 25px 500px;
 	}
 
