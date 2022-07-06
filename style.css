@@ -90,7 +90,7 @@ html {
 		font-size: 12px;
 	}
 
-	#header-image {
+	.header-image {
 		padding-top: 40px;
 		display: flex;
 		justify-content: center;
@@ -197,6 +197,77 @@ html {
 		padding: 25px;
 	}
 
+	#officers {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-around;
+		margin-left: 400px;
+		margin-right: 400px;
+	}
+
+	.officer {
+		border: 1px solid #191919;
+		padding: 25px;
+		margin: 25px;
+		width: 350px;
+		height: 500px;
+	}
+
+	.officer-socials {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+	.officer-socials a {
+		text-decoration: none;
+		padding: 5px;
+	}
+
+	.linkedin {
+		color: #0077B5;
+	}
+
+	.github {
+		color: #34495E;
+	}
+
+	.pranav {
+		background: url('pranav.jpg');
+	}
+
+	.peter {
+		background: url('peter.jpg');
+	}
+
+	.rahul {
+		background: url('rahul.jpg');
+	}
+
+	.john {
+		background: url('john.jpeg');
+	}
+
+	.officer-headshot {
+		margin: 0 auto;
+		height: 100px;
+		width: 100px;
+		background-size: cover;
+		border-radius: 100%;
+		background-position: center;
+	}
+
+	.officer h2 {
+		padding-top: 20px;
+	}
+
+	.officer h2, .officer h4 {
+		margin: 0;
+		text-align: center;
+	}
+
 	footer {
 		padding: 35px;
 		background: var(--color-black);
@@ -214,7 +285,7 @@ html {
 		padding-left: 20px;
 	}
 
-	#header-image {
+	.header-image {
 		height: 400px;
 	}
 
@@ -251,7 +322,7 @@ html {
 		font-size: 64px;
 	}
 
-	#header-image {
+	.header-image {
 		height: 550px;
 	}
 
@@ -303,7 +374,7 @@ html {
 		right: 300px;
 	}
 
-	#header-image {
+	.header-image {
 		height: 700px;
 		background-position: 50% 35%;
 	}
